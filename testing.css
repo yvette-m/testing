@@ -1,0 +1,98 @@
+h1 {
+    font-size:  70px;
+    color:brown;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+body {
+    background-color:aliceblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    width: 70%;
+    max-width: 1000px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* better: */
+    margin: 0 auto;
+}
+
+#columns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color: antiquewhite;
+}
+
+#columns div{
+    height: 370px;
+    width: 335px;
+    background: #108cff;
+    margin: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+/* Navigation styling and hover affect */
+
+#nav{
+    position: fixed;
+}
+
+nav ul li {
+    list-style: none;
+    display:  inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blueviolet;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:hover{
+    border-bottom: 2px solid blueviolet;
+}
+
+nav ul li.active a{
+    border-bottom: 2px solid blueviolet;
+}
+
+nav ul li.btn a{
+    background: transparent;
+    color: blueviolet;
+    border: 1px solid #f5dca8;
+    padding: 9px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 150px;
+}
+
+nav ul li.btn:hover a{
+    border: 1px solid blueviolet;
+    color: #4c3957;
+    background: blueviolet;
+    transition: .4s;
+}
